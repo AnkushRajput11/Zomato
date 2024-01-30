@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="DisplayRestaurant.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="maindiv">
+      <div id="navdiv">
+        <div id="logodiv">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+          />
+        </div>
+        <div id="profilediv">
+          <div id="profile-img">
+            <img src="profile.jpg" />
+          </div>
+          <div id="cust-name">Ankush</div>
+          <div id="dropdown-icon" status="down"><img src="drop.png" /></div>
+        </div>
+        <div id="listdiv">
+          <ul id="navlist">
+            <li id="login">Login</li>
+            <li id="signup">Sign up</li>
+            <li><a href="PartnerWithUs.html">Add Restaurant</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="profile-popup">
+      <div id="profile">Profile</div>
+      <div id="logout">Logout</div>
+    </div>
+    <div id="popup">
+      <div id="cancel">&times;</div>
+      <div id="login-heading">Login</div>
+      <form id="login_form">
+        <input type="text" placeholder="Email" id="email" name="email" />
+        <br />
+        <input
+          type="password"
+          placeholder="Password"
+          id="password"
+          name="password"
+        />
+        <br />
+        <button id="loginbtn">Login</button>
+        <br />
+        <a href="#" id="frgtpass">Forgot Password?</a>
+      </form>
+      <hr />
+      <div id="createAccount">
+        New to Zomato? <a href="#" onclick="change('signup')">Create account</a>
+      </div>
+    </div>
+    <div id="signup-popup">
+      <div id="scancel">&times;</div>
+      <div id="login-heading">Signup</div>
+      <form id="signup_form">
+        <input type="text" placeholder="Name" id="sname" name="name" />
+        <input type="text" placeholder="Email" id="semail" name="email" />
+        <input
+          type="text"
+          placeholder="Phone Number"
+          id="sphone"
+          name="phone"
+        />
+        <br />
+        <input
+          type="password"
+          placeholder="Password"
+          id="spassword"
+          name="password"
+        />
+        <br />
+        <button id="signupbtn">Signup</button>
+        <br />
+      </form>
+      <hr />
+      <div id="loginAccount">
+        Already have an account?
+        <a href="#" onclick="change('login')"> Log in</a>
+      </div>
+    </div>
+    <script src="DisplayRestaurant.js"></script>
+  </body>
+</html>

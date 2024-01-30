@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="ViewRestaurant.css" />
+  </head>
+  <body>
+    <div id="maindiv">
+      <div id="navdiv">
+        <div id="logodiv">
+          <img
+            src="https://www.zomato.com/partners/static/media/logo.db9895f0fbfcd5225463fe17abc4317d.svg"
+            width="120px"
+            alt="ZomatoLogo"
+          />
+        </div>
+      </div>
+      <div id="content-div">
+        <div id="feature-div">
+          <div
+            class="sub-feature-div"
+            selected="true"
+            id="order-feature"
+            style="
+              filter: invert(37%) sepia(55%) saturate(1768%) hue-rotate(198deg)
+                brightness(95%) contrast(98%);
+            "
+          >
+            <div class="feature-item">Orders</div>
+            <div class="feature-img">
+              <img src="order.png" />
+            </div>
+          </div>
+          <div class="sub-feature-div" selected="false" id="menu-feature">
+            <div class="feature-item">Menu</div>
+            <div class="feature-img">
+              <img src="menu.png" />
+            </div>
+          </div>
+          <div class="sub-feature-div" selected="false">
+            <div class="feature-item">Order history</div>
+            <div class="feature-img">
+              <img src="order_history.png" />
+            </div>
+          </div>
+          <div class="sub-feature-div" selected="false">
+            <div class="feature-item">Insights</div>
+            <div class="feature-img">
+              <img src="insight.png" />
+            </div>
+          </div>
+          <div class="sub-feature-div" selected="false">
+            <div class="feature-item">Help center</div>
+            <div class="feature-img">
+              <img src="help.png" />
+            </div>
+          </div>
+          <div class="sub-feature-div" selected="false">
+            <div class="feature-item">Logout</div>
+            <div class="feature-img">
+              <img src="logout.png" />
+            </div>
+          </div>
+        </div>
+        <div id="order-details-div">
+          <div id="status-option-div">
+            <div id="preparing" class="status-options">Preparing</div>
+            <div id="ready" class="status-options">Ready</div>
+          </div>
+          <div id="preparing-order-div">
+            <div class="card">
+              <div class="customer-details">
+                <div class="order-id">ID : 17420278956</div>
+                <div class="cust-name">Raj Kumar</div>
+                <div class="phone">9874563210</div>
+                <div class="address">Shivajinagar, Pune</div>
+                <div class="time">Placed 2:00 pm</div>
+              </div>
+              <div class="bill-details">
+                <div class="dish-details">
+                  <div class="dish">
+                    1 x Paneer
+                    <div class="price"><span>&#x20B9;</span>450</div>
+                  </div>
+                  <div class="dish">
+                    1 x Hot Chocolate
+                    <div class="price"><span>&#x20B9;</span>460</div>
+                  </div>
+                  <div class="dish">
+                    2 x Coffee
+                    <div class="price"><span>&#x20B9;</span>550</div>
+                  </div>
+                </div>
+                <div class="total-bill">
+                  <div class="bill-txt">Total bill</div>
+                  <div class="payment-type">PAID</div>
+                  <div class="total-amount"><span>&#x20B9;</span>800</div>
+                  <div class="print-bill">
+                    <img src="print.png" />&nbsp; Print bill
+                  </div>
+                </div>
+                <div class="order-ready">Order Ready</div>
+              </div>
+              <div class="delivary-partner-details">
+                <div class="head-text">Delivery Partner Details</div>
+                <div class="image">
+                  <img
+                    src="https://img.freepik.com/free-photo/food-delivery-boy-delivering-food-scooter_1303-27695.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705190400&semt=ais"
+                  />
+                </div>
+                <div class="name">
+                  <span class="del-boy-name">Raghav</span> is on the way
+                </div>
+                <div class="track"><img src="loc.png" /> Track</div>
+                <div class="call"><img src="call.png" /> Call</div>
+                <div class="arrival-time">Arriving in 8 min</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="customer-details">
+                <div class="order-id">ID : 17420278956</div>
+                <div class="cust-name">Raj Kumar</div>
+                <div class="phone">9874563210</div>
+                <div class="address">Shivajinagar, Pune</div>
+                <div class="time">Placed 2:00 pm</div>
+              </div>
+              <div class="bill-details">
+                <div class="dish-details">
+                  <div class="dish">
+                    1 x Paneer
+                    <div class="price"><span>&#x20B9;</span>450</div>
+                  </div>
+                  <div class="dish">
+                    1 x Hot Chocolate
+                    <div class="price"><span>&#x20B9;</span>460</div>
+                  </div>
+                  <div class="dish">
+                    2 x Coffee
+                    <div class="price"><span>&#x20B9;</span>550</div>
+                  </div>
+                </div>
+                <div class="total-bill">
+                  <div class="bill-txt">Total bill</div>
+                  <div class="payment-type">PAID</div>
+                  <div class="total-amount"><span>&#x20B9;</span>800</div>
+                  <div class="print-bill">
+                    <img src="print.png" />&nbsp; Print bill
+                  </div>
+                </div>
+                <div class="order-ready">Order Ready</div>
+              </div>
+              <div class="delivary-partner-details">
+                <div class="head-text">Delivery Partner Details</div>
+                <div class="image">
+                  <img
+                    src="https://img.freepik.com/free-photo/food-delivery-boy-delivering-food-scooter_1303-27695.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705190400&semt=ais"
+                  />
+                </div>
+                <div class="name">
+                  <span class="del-boy-name">Raghav</span> is on the way
+                </div>
+                <div class="track"><img src="loc.png" /> Track</div>
+                <div class="call"><img src="call.png" /> Call</div>
+                <div class="arrival-time">Arriving in 8 min</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="customer-details">
+                <div class="order-id">ID : 17420278956</div>
+                <div class="cust-name">Raj Kumar</div>
+                <div class="phone">9874563210</div>
+                <div class="address">Shivajinagar, Pune</div>
+                <div class="time">Placed 2:00 pm</div>
+              </div>
+              <div class="bill-details">
+                <div class="dish-details">
+                  <div class="dish">
+                    1 x Paneer
+                    <div class="price"><span>&#x20B9;</span>450</div>
+                  </div>
+                  <div class="dish">
+                    1 x Hot Chocolate
+                    <div class="price"><span>&#x20B9;</span>460</div>
+                  </div>
+                  <div class="dish">
+                    2 x Coffee
+                    <div class="price"><span>&#x20B9;</span>550</div>
+                  </div>
+                </div>
+                <div class="total-bill">
+                  <div class="bill-txt">Total bill</div>
+                  <div class="payment-type">PAID</div>
+                  <div class="total-amount"><span>&#x20B9;</span>800</div>
+                  <div class="print-bill">
+                    <img src="print.png" />&nbsp; Print bill
+                  </div>
+                </div>
+                <div class="order-ready">Order Ready</div>
+              </div>
+              <div class="delivary-partner-details">
+                <div class="head-text">Delivery Partner Details</div>
+                <div class="image">
+                  <img
+                    src="https://img.freepik.com/free-photo/food-delivery-boy-delivering-food-scooter_1303-27695.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705190400&semt=ais"
+                  />
+                </div>
+                <div class="name">
+                  <span class="del-boy-name">Raghav</span> is on the way
+                </div>
+                <div class="track"><img src="loc.png" /> Track</div>
+                <div class="call"><img src="call.png" /> Call</div>
+                <div class="arrival-time">Arriving in 8 min</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="customer-details">
+                <div class="order-id">ID : 17420278956</div>
+                <div class="cust-name">Raj Kumar</div>
+                <div class="phone">9874563210</div>
+                <div class="address">Shivajinagar, Pune</div>
+                <div class="time">Placed 2:00 pm</div>
+              </div>
+              <div class="bill-details">
+                <div class="dish-details">
+                  <div class="dish">
+                    1 x Paneer
+                    <div class="price"><span>&#x20B9;</span>450</div>
+                  </div>
+                  <div class="dish">
+                    1 x Hot Chocolate
+                    <div class="price"><span>&#x20B9;</span>460</div>
+                  </div>
+                  <div class="dish">
+                    2 x Coffee
+                    <div class="price"><span>&#x20B9;</span>550</div>
+                  </div>
+                </div>
+                <div class="total-bill">
+                  <div class="bill-txt">Total bill</div>
+                  <div class="payment-type">PAID</div>
+                  <div class="total-amount"><span>&#x20B9;</span>800</div>
+                  <div class="print-bill">
+                    <img src="print.png" />&nbsp; Print bill
+                  </div>
+                </div>
+                <div class="order-ready">Order Ready</div>
+              </div>
+              <div class="delivary-partner-details">
+                <div class="head-text">Delivery Partner Details</div>
+                <div class="image">
+                  <img
+                    src="https://img.freepik.com/free-photo/food-delivery-boy-delivering-food-scooter_1303-27695.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705190400&semt=ais"
+                  />
+                </div>
+                <div class="name">
+                  <span class="del-boy-name">Raghav</span> is on the way
+                </div>
+                <div class="track"><img src="loc.png" /> Track</div>
+                <div class="call"><img src="call.png" /> Call</div>
+                <div class="arrival-time">Arriving in 8 min</div>
+              </div>
+            </div>
+          </div>
+          <div id="ready-order-div"></div>
+        </div>
+        <div id="menu-details-div">
+          <div id="menu-items-div">
+            <div id="breakfast" class="menu-type">
+              <div class="menu-type-image">
+                <img
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Healthy-porridge-bowl-b1f9205.jpg?quality=90&resize=500,454"
+                />
+              </div>
+              <div class="menu-type-title">Breakfast</div>
+            </div>
+            <div id="breakfast-item-list" class="item-list-div">
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-id">xxx</div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="lunch" class="menu-type">
+              <div class="menu-type-image">
+                <img
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Healthy-porridge-bowl-b1f9205.jpg?quality=90&resize=500,454"
+                />
+              </div>
+              <div class="menu-type-title">Lunch</div>
+            </div>
+            <div id="lunch-item-list" class="item-list-div">
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="dinner" class="menu-type">
+              <div class="menu-type-image">
+                <img
+                  src="https://images.immediate.co.uk/production/volatile/sites/30/2013/05/Healthy-porridge-bowl-b1f9205.jpg?quality=90&resize=500,454"
+                />
+              </div>
+              <div class="menu-type-title">Dinner</div>
+            </div>
+            <div id="dinner-item-list" class="item-list-div">
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-div">
+                  <img
+                    src="https://b.zmtcdn.com/data/dish_photos/251/7a48083caf103d1dbe02eff1133ab251.jpg?fit=around|130:130&crop=130:130;*,*"
+                  />
+                </div>
+                <div class="item-content-div">
+                  <div class="veg-nonveg">
+                    <img src="veg.png" />
+                  </div>
+                  <div class="item-title">Burger</div>
+                  <div class="item-rating">Rating : 4.1</div>
+                  <div class="item-price">&#x20B9; 400</div>
+                  <div class="item-desc">
+                    jha;fdanef;ojw;kkandleifsjehfvsiygdbcsdf
+                  </div>
+                  <div class="edit-item">
+                    <img src="edit.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="add-item-div">
+            <div id="select-menu-type-div">
+              <div class="select-menu-type" selected="false">Breakfast</div>
+              <div class="select-menu-type" selected="false">Lunch</div>
+              <div class="select-menu-type" selected="false">Dinner</div>
+            </div>
+            <div class="input-head">Dish Name</div>
+            <input type="text" id="dish-name-input" />
+            <div id="dish-desc-head">Dish Description</div>
+            <textarea id="dish-desc-input"></textarea>
+            <div id="dish-image-head">Add Cover Image (max size 1mb)</div>
+            <div id="dish-image-div">
+              <div id="upload-image-text">Upload Image</div>
+            </div>
+            <div>
+              <input
+                type="file"
+                style="display: none"
+                id="image-input"
+                onchange="imgUpload(event)"
+              />
+            </div>
+            <div id="consume-type-head">Choose Veg/Non-Veg</div>
+            <div id="consume-type-div">
+              <div class="consume-type">Veg</div>
+              <div class="consume-type">Non-Veg</div>
+            </div>
+            <div id="dish-price-head">Price</div>
+            <input type="text" id="dish-price-input" />
+            <div id="dish-submit">Add Dish</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="ViewRestaurant.js"></script>
+  </body>
+</html>

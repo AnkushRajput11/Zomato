@@ -1,0 +1,406 @@
+#navlist a {
+  text-decoration: none;
+  color: white;
+}
+#maindiv {
+  /* filter: brightness(50%); */
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.55)),
+    url("https://www.herofincorp.com/public/admin_assets/upload/blog/64b91a06ab1c8_food%20business%20ideas.webp");
+
+  background-repeat: no-repeat;
+  background-color: black;
+  background-size: 100%;
+
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#navdiv {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+#navlist {
+  color: aliceblue;
+  width: 200px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 25px;
+}
+#navlist li {
+  cursor: pointer;
+}
+#logo {
+  height: 50px;
+  width: 50px;
+  color: aliceblue;
+
+  position: absolute;
+  left: 10%;
+}
+#listdiv {
+  position: absolute;
+  left: 80%;
+}
+#mainimg img {
+  height: 70px;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+}
+#slogan {
+  color: aliceblue;
+  font-size: 50px;
+  position: absolute;
+  top: 45%;
+  left: 24%;
+}
+#search input {
+  height: 50px;
+  width: 600px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  position: absolute;
+  top: 57%;
+  left: 30%;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#popup {
+  display: none;
+  height: 450px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+#signup-popup {
+  display: none;
+  height: 550px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+#email {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#password {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#sname {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#semail {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#spassword {
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#sphone {
+  position: absolute;
+  top: 310px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#signupbtn {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(239, 79, 95);
+  color: aliceblue;
+  height: 50px;
+  width: 84%;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#loginbtn {
+  position: absolute;
+  top: 260px;
+  left: 20px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(239, 79, 95);
+  color: aliceblue;
+  height: 50px;
+  width: 84%;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#frgtpass {
+  position: absolute;
+  top: 320px;
+  left: 25px;
+  margin: 10px;
+  text-decoration: none;
+}
+#cancel {
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+#scancel {
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+#login-heading {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 30px;
+}
+#popup hr {
+  position: relative;
+  top: 300px;
+  width: 85%;
+}
+#signup-popup hr {
+  position: relative;
+  top: 410px;
+  width: 85%;
+}
+#createAccount {
+  position: absolute;
+  top: 380px;
+  left: 25px;
+  margin: 10px;
+  font-size: 17px;
+}
+#loginAccount {
+  position: absolute;
+  top: 472px;
+  left: 25px;
+  margin: 10px;
+  font-size: 17px;
+}
+#loginAccount a {
+  text-decoration: none;
+  color: rgb(239, 79, 95);
+  font-weight: bolder;
+}
+#createAccount a {
+  text-decoration: none;
+  color: rgb(239, 79, 95);
+  font-weight: bolder;
+}
+#toast {
+  visibility: hidden;
+  height: 50px;
+  width: 250px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 40px;
+  left: 42%;
+  border-radius: 10px;
+}
+#toast div {
+  position: absolute;
+  top: 13px;
+  left: 19px;
+}
+
+#toast.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+#keepmeloggedin {
+  position: absolute;
+  top: 240px;
+  left: 30px;
+}
+#profile-popup {
+  display: none;
+  height: 110px;
+  width: 140px;
+  position: absolute;
+  top: 80px;
+  right: 140px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+#profile-popup div {
+  height: 10%;
+  width: 50px;
+  position: relative;
+  top: 25px;
+  left: 40px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+#profilediv {
+  height: 100%;
+  width: 220px;
+  position: absolute;
+  right: 2%;
+  display: none;
+  flex-direction: row;
+}
+#profile-img img {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+#profile-img {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  cursor: pointer;
+}
+#cust-name {
+  position: absolute;
+  top: 28px;
+  left: 65px;
+  font-size: 20px;
+  color: white;
+}
+#dropdown-icon img {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 33px;
+  right: 5px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+}
+#add-rest-div {
+  font-size: 25px;
+  position: absolute;
+  top: 25px;
+  left: 70%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}

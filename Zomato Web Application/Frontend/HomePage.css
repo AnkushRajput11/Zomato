@@ -1,0 +1,934 @@
+#html {
+  max-width: 100%;
+  overflow-y: auto;
+}
+#body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white;
+}
+
+#maindiv {
+  /* background-color: antiquewhite; */
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 300px;
+  width: 100vw;
+  background-color: white;
+}
+#navdiv {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 100vw;
+}
+#logodiv img {
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+#searchbar {
+  height: 70%;
+  width: 700px;
+  background-color: white;
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#location {
+  position: relative;
+  height: 100%;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+}
+#search {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#search-icon img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 17px;
+  left: 15px;
+}
+#vline {
+  position: absolute;
+  top: 17px;
+  height: 37%;
+  width: 1.5px;
+  background-color: lightgray;
+}
+#search input {
+  position: absolute;
+  left: 45px;
+  height: 95%;
+  width: 88%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 15px;
+}
+#loc-icon img {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#loc-search {
+  height: 100%;
+  width: 70%;
+  position: absolute;
+  left: 40px;
+}
+#loc-search input {
+  height: 95%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+#drop-icon img {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+}
+#profilediv {
+  height: 100%;
+  width: 150px;
+
+  position: absolute;
+  right: 10%;
+  display: flex;
+  flex-direction: row;
+}
+#profile-img img {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+#profile-img {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  cursor: pointer;
+}
+#cust-name {
+  position: absolute;
+  top: 28px;
+  left: 65px;
+  font-size: 20px;
+  width: auto;
+}
+#dropdown-icon img {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 33px;
+  right: 5px;
+  cursor: pointer;
+}
+#options {
+  display: flex;
+  flex-direction: row;
+  height: 83px;
+  width: 100vw;
+  border-bottom: 1px solid lightgray;
+  position: absolute;
+  top: 100px;
+}
+#option-image img {
+  height: 40px;
+  width: 40px;
+}
+#option-image {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  cursor: pointer;
+}
+#delivery {
+  position: absolute;
+  left: 100px;
+  border-bottom: 3px solid salmon;
+  color: rgb(239, 79, 95);
+}
+#dining-out {
+  position: absolute;
+  left: 350px;
+  color: rgb(105, 105, 105);
+}
+#delivery,
+#dining-out {
+  display: flex;
+  flex-direction: row;
+  height: 98%;
+  width: 200px;
+  cursor: pointer;
+}
+#option-name {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+  cursor: pointer;
+  font-size: 23px;
+}
+#content-div {
+  position: absolute;
+  top: 190px;
+  left: 0px;
+  width: 100vw;
+  height: 1000px;
+}
+#filter-div {
+  position: absolute;
+  /* top: 200px; */
+  left: 0px;
+  height: 60px;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+}
+#filter {
+  height: 30px;
+  width: 70px;
+  border: 2px solid lightgray;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 28px;
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  color: gray;
+  cursor: pointer;
+}
+#rating {
+  height: 30px;
+  width: 100px;
+  border: 2px solid lightgray;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 28px;
+  position: absolute;
+  top: 10px;
+  color: gray;
+  left: 200px;
+  cursor: pointer;
+}
+#rating:hover,
+#filter:hover {
+  background-color: rgb(241, 241, 241);
+}
+#location-dropdown {
+  height: auto;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  top: 75px;
+  left: 385px;
+  border: 1px solid lightgrey;
+  overflow: hidden;
+  color: rgb(239, 79, 95);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#detect-location {
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  width: 100%;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  cursor: pointer;
+}
+#add-address {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 72px;
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+#addressList ul {
+  list-style-type: none;
+}
+#addressList li {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  width: 80%;
+  color: rgb(180, 179, 179);
+  cursor: pointer;
+}
+
+#detect-location:hover {
+  background-color: rgb(239, 239, 239);
+}
+#add-address:hover {
+  background-color: rgb(239, 239, 239);
+}
+#loc-img img {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#address-img img {
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#loc-text {
+  position: absolute;
+  top: 26px;
+  left: 60px;
+  font-size: 20px;
+}
+#address-text {
+  position: absolute;
+  top: 26px;
+  left: 60px;
+  font-size: 20px;
+}
+#food-category {
+  position: absolute;
+  top: 67px;
+  left: 0px;
+  height: 320px;
+  width: 100vw;
+  background-color: rgb(244, 244, 244);
+}
+#food-category-title {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 30px;
+}
+#carousal-div {
+  height: 70%;
+  width: 80%;
+
+  position: absolute;
+  top: 65px;
+  left: 80px;
+}
+#left-button {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 40%;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#right-button {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 40%;
+  right: 0px;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#left-button img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+}
+#right-button img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 5px;
+  right: 3px;
+}
+#sub-carousal-div1 {
+  height: 100%;
+  width: 97%;
+  position: absolute;
+  left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sub-carousal-div2 {
+  height: 100%;
+  width: 97%;
+  position: absolute;
+  left: 20px;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.food-item-div {
+  position: relative;
+  height: 100%;
+  width: 175px;
+}
+.food-item-div img {
+  height: 170px;
+  width: 170px;
+}
+.food-img {
+  position: absolute;
+  top: 18px;
+  height: 170px;
+  width: 170px;
+
+  border-radius: 85px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.food-name {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  /* left: 53px; */
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#restaurant-div {
+  width: 100vw;
+  position: absolute;
+  top: 400px;
+  max-width: 100%;
+  background-color: white;
+}
+#delivery-location-name {
+  width: auto;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 30px;
+}
+#restaurants {
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  width: 77%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+}
+.restaurant-card {
+  position: relative;
+  height: 300px;
+  width: 350px;
+  border-radius: 20px;
+  border: 1px solid rgb(237, 237, 237);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-bottom: 40px;
+  background-color: white;
+}
+
+.restaurant-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 220px;
+  width: 94%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.restaurant-img img {
+  height: 220px;
+  width: 330px;
+}
+.restaurant-name {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  font-weight: bolder;
+}
+.restaurant-descp {
+  position: absolute;
+  bottom: 18px;
+  left: 10px;
+  color: rgb(120, 120, 120);
+}
+.restaurant-rating {
+  position: absolute;
+  bottom: 40px;
+  right: 12px;
+  height: 20px;
+  width: 35px;
+  background-color: rgb(38, 126, 62);
+  color: aliceblue;
+  font-weight: bolder;
+  padding-left: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.restaurant-rating span {
+  text-align: center;
+  padding-top: 1px;
+  padding-left: 2px;
+  font-size: 11px;
+}
+#filter-popup {
+  display: none;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 15%;
+  left: 32%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+#filter-head {
+  height: 70px;
+  width: 100%;
+  font-size: 25px;
+}
+#filter-heading {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#filter-content {
+  height: 420px;
+  width: 100%;
+  position: absolute;
+  top: 70px;
+}
+#filter-radio {
+  position: absolute;
+  left: 150px;
+  top: 50px;
+}
+input[type="radio"] {
+  accent-color: rgb(239, 79, 95);
+}
+#filter-content button {
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 70px;
+  left: 40%;
+}
+#cancel-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+form button {
+  border: none;
+  background-color: rgb(239, 79, 95);
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+}
+#profile-popup {
+  display: none;
+  height: 110px;
+  width: 140px;
+  position: absolute;
+  top: 80px;
+  right: 140px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+#profile-popup div {
+  height: 10%;
+  width: 50px;
+  position: relative;
+  top: 25px;
+  left: 40px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+#dineout-restaurant-div {
+  position: absolute;
+  top: 410px;
+  left: 100px;
+  width: 77%;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+}
+#add-address-popup {
+  display: none;
+  height: 650px;
+  width: 600px;
+  position: absolute;
+  background-color: white;
+  top: 10px;
+  left: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+#map {
+  height: 70%;
+  width: 90%;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+#set-location {
+  position: absolute;
+  top: 500px;
+  left: 30px;
+  width: 90%;
+  height: 140px;
+}
+#set-location input {
+  width: 99%;
+  border: 2px solid lightgray;
+  outline: none;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+#set-location button {
+  height: 40px;
+  width: 150px;
+  background-color: rgb(239, 79, 95);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  cursor: pointer;
+}
+#add-address-cancel {
+  position: absolute;
+  right: 15px;
+  top: 8px;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#listdiv {
+  position: absolute;
+  left: 67%;
+}
+#navlist a {
+  text-decoration: none;
+  color: black;
+}
+#navlist {
+  color: black;
+  width: 500px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+#navlist li {
+  cursor: pointer;
+}
+#popup {
+  display: none;
+  height: 450px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+#signup-popup {
+  display: none;
+  height: 550px;
+  width: 450px;
+  border-radius: 20px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+#email {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#password {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#sname {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#semail {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#spassword {
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#sphone {
+  position: absolute;
+  top: 310px;
+  left: 20px;
+  margin: 10px;
+
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 80%;
+  border-radius: 7px;
+  font-size: 15px;
+  padding-left: 15px;
+}
+#signupbtn {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(239, 79, 95);
+  color: aliceblue;
+  height: 50px;
+  width: 84%;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#loginbtn {
+  position: absolute;
+  top: 240px;
+  left: 20px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(239, 79, 95);
+  color: aliceblue;
+  height: 50px;
+  width: 84%;
+  border-radius: 10px;
+  font-size: 20px;
+}
+#frgtpass {
+  position: absolute;
+  top: 300px;
+  left: 25px;
+  margin: 10px;
+  text-decoration: none;
+}
+#cancel {
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+#scancel {
+  font-size: 30px;
+  font-weight: bolder;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+#login-heading {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 30px;
+}
+#popup hr {
+  position: relative;
+  top: 300px;
+  width: 85%;
+}
+#signup-popup hr {
+  position: relative;
+  top: 410px;
+  width: 85%;
+}
+#createAccount {
+  position: absolute;
+  top: 380px;
+  left: 25px;
+  margin: 10px;
+  font-size: 17px;
+}
+#loginAccount {
+  position: absolute;
+  top: 472px;
+  left: 25px;
+  margin: 10px;
+  font-size: 17px;
+}
+#loginAccount a {
+  text-decoration: none;
+  color: rgb(239, 79, 95);
+  font-weight: bolder;
+}
+#createAccount a {
+  text-decoration: none;
+  color: rgb(239, 79, 95);
+  font-weight: bolder;
+}
+#search-popup {
+  display: none;
+  height: auto;
+  max-height: 500px;
+  overflow-x: hidden;
+  width: 430px;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  left: 650px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.search-dish {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.search-dish-image {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.search-dish-image img {
+  height: 80px;
+  width: 80px;
+}
+.search-dish-title {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  font-size: 20px;
+}
+.search-restaurant-image {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  left: 15px;
+  top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.search-restaurant-image img {
+  height: 80px;
+  width: 80px;
+}
+.search-restaurant-title {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  font-size: 20px;
+}
+.search-restaurant-rating {
+  position: absolute;
+  top: 40px;
+  left: 120px;
+  font-size: 16px;
+}
+.search-restaurant {
+  height: 100px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.search-restaurant:hover {
+  background-color: rgb(236, 236, 236);
+}
+.search-dish:hover {
+  background-color: rgb(236, 236, 236);
+}

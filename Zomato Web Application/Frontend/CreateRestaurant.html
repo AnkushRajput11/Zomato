@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CreateRestaurant.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+  </head>
+  <body onload="loadMap()">
+    <div id="maindiv">
+      <div id="navdiv">
+        <div id="logodiv">
+          <img
+            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
+          />
+        </div>
+        <div id="profilediv">
+          <div id="profile-img">
+            <img src="profile.jpg" />
+          </div>
+          <div id="cust-name">Ankush</div>
+          <div id="dropdown-icon" status="down"><img src="drop.png" /></div>
+        </div>
+      </div>
+      <div id="contentdiv">
+        <div id="heading">Restaurant Information</div>
+        <div id="infomation-div">
+          <form id="rest-info-form">
+            <input
+              type="text"
+              placeholder="Restaurant Name"
+              id="restaurant-name"
+            />
+            <br />
+            <br />
+            <input
+              type="text"
+              placeholder="Restaurant Complete Address"
+              id="restaurant-address"
+            />
+            <br />
+            <br />
+
+            <input
+              type="text"
+              placeholder="Mobile number at restaurant"
+              id="restaurant-phone"
+            />
+            <br />
+            <br />
+
+            <input
+              type="text"
+              placeholder="Mobile number of owner"
+              id="restaurant-owner-phone"
+            />
+            <br />
+            <br />
+            Pick Location
+            <br />
+            <div id="map"></div>
+            <input type="text" id="lat-loc" />
+            <input type="text" id="long-loc" />
+            <br />
+            <br />
+            <label>Establishment Type:</label>
+            <br />
+            <select id="establishment-type" name="establishment-type">
+              <option value="delivery" selected>Delivery</option>
+              <option value="dining out">Dining out</option>
+              <option value="both">Both</option>
+            </select>
+            <br />
+            <br />
+            <br />
+            <label>Types of cuisines</label>
+            <br />
+            <br />
+            <textarea
+              placeholder="e.g Pizza, Biryani, Dessert, Beverages"
+              id="restaurant-cuisines"
+            ></textarea>
+            <br />
+            <br />
+            <br />
+            <label>Upload Menu Image</label>
+            <br />
+            <br />
+            <div id="menu-img">
+              <img src="#" id="image" />
+            </div>
+            <br />
+            <input type="file" onchange="menuUpload(event)" id="menu-image" />
+
+            <br />
+            <br />
+            <br />
+            <label>Upload Restaurant Image</label>
+            <br />
+            <br />
+            <div id="restaurant-img">
+              <img src="#" id="rest-image" />
+            </div>
+            <br />
+            <input
+              type="file"
+              onchange="restaurantUpload(event)"
+              id="restaurant-image"
+            />
+            <br />
+            <br />
+            <br />
+
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="profile-popup">
+      <div id="profile">Profile</div>
+      <div id="logout">Logout</div>
+    </div>
+    <script src="CreateRestaurant.js"></script>
+  </body>
+</html>
